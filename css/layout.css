@@ -8,6 +8,7 @@
 
 /* Hero layout */
     header {
+        background: no-repeat center/50% url("../img/header.png");
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -16,9 +17,15 @@
         text-align: center; }
         .frame-text{
             max-width: 50vw;
+            margin-bottom: 5rem;
         }
         .blue-text{
             color: #2600ff;
+        }
+
+        #header-button{
+            margin-top: 11rem;
+            z-index: 20;
         }
 
 /* About me layout */
@@ -38,7 +45,7 @@
             grid-gap: 4em 2em;
         }
             .about-image{
-                background-color: #2600ff;
+                background: no-repeat center/70% url("../img/about.png");
             }
             .about-desc{
                 display: flex;
