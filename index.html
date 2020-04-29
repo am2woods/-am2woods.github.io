@@ -3,9 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/71996b1525.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1>hello</h1>
+    <main>
+        <nav>
+            <h1>Ahmad Woods</h1>
+            <ul class='nav-list'>
+                <li id='nav-about'>About Me</li>
+                <li id='nav-contact' class='btn'>Contact Me!</li>
+            </ul>
+        </nav>
+
+
+        <header>
+            <h1>Bringing ingenuity and playfulness to web development</h1>
+            <div class='frame-text'>
+                <h2>Hello world, I'm <span class='blue-text'>Ahmad Woods.</span> I'm a front-end web developer building beautiful and responsive web pages and clever web apps.</h2>
+            </div>
+            <h2 id='header-button' class='btn'>Check me out </h2>
+        </header>
+
+        <section class='about' id='about-id'>
+            <div class="about-grid">
+
+                <div class="about-image" data-aos="fade-right">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nihil tempore, provident non earum temporibus consequatur ipsum dolores atque odit nam assumenda deserunt, recusandae fugiat mollitia sunt? Eligendi, laboriosam aspernatur.
+                </div>
+
+                <div class="about-desc" data-aos="fade-left">
+                    <h1>Who am I</h1>
+                    <p>
+                        Hi again! I'm Ahmad Woods a Brooklyn-born NYC-based front-end web developer. I'm passionate about 
+                        building stylish, reponsive and, most of all, expressive web pages and web applications. 
+                        Currently I experiment with developing web apps to challenge myself, hone my skills, and learn
+                        new technologies. I also work with people and small businesses trying to build their personal
+                        brands with a web page showcasing their services. 
+                    </p>
+                </div>
+
+                <div class="web-desc" data-aos="fade-right">
+                    <h1>Front-end Developer</h1>
+                    <p>
+                        The browser is my playground. There's something about seeing code come to life on a webpage
+                    </p>
+                    <p>Techologies I use: HTML CSS Javascript</p>
+                </div>
+
+                <div class="web-image" data-aos="fade-left">
+                </div>
+
+                <div class="design-image" data-aos="fade-right">
+                </div>
+
+                <div class="design-desc" data-aos="fade-left">
+                    <h1>Designer</h1>
+                    <p>To build beautiful and expressive web pages they must first be designed</p>
+                    <p>Technologies I use: Pen & Paper, Photoshop, Illustrator, Adobe XD</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class='projects'>
+            <h1>PROJECTS</h1>
+            <div class="wrapper">
+                <div class="app rps">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>RPS Game</h2>
+                            <span class="btn" id="rps-btn">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="app ombd">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>Movie App</h2>
+                            <span class="btn" id="ombd-btn">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="app giphy">
+                    <div class="overlay">
+                        <div class="text">
+                            <h2>Giphy App</h2>
+                            <span class="btn" id="giphy-btn">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="modal" id="project-modal">
+                <div class="modal-content">
+                    <span id='closepro' class="close">&times;</span>
+                    <div id="rpsapp">
+                        <div class="app-details">
+                            <h1>RPS Game</h1>
+                            <div class="app-desc">
+                                <p>This is an app where you face off against an AI controlled opponenet in a game
+                                of Rock, Paper, Scissors. The player selects their choice of rock, paper or Scissors
+                                and the AI picks it's choice. The app records the winner and loser and keeps track
+                                with a scoreboard.</p>
+                                Technologies: Javascript, HTML, CSS
+                            </div>
+                            <a class='btn srccode' href='https://github.com/am2woods/rps-app'>Source Code</a>
+                        </div>
+                    </div>
+                    <div id="ombdapp">
+                        <div class="app-details">
+                            <h1>Movie Finder App</h1>
+                            <div class="app-desc">
+                                <p>
+                                   With this app, users can search for movies by typing in words or terms into 
+                                   the search bar then the app displays movie posters related to the term. The 
+                                   users can then click on the movie poster and further details of the movie will 
+                                   display in a modal. The app takes advantage of the OMBD api for the movies and 
+                                   information.
+                                </p>
+                                Technologies: Javascript, API, HTML, CSS
+                            </div>
+                            <a class='btn srccode' href='https://github.com/am2woods/movie-finder'>Source Code</a>
+                        </div>
+                    </div>
+                    <div id="giphyapp">
+                        <div class="app-details">
+                            <h1>Gif Search App</h1>
+                            <div class="app-desc">
+                                <p>
+                                    This is webapp lets the user type in a search terms or words and the app then
+                                    displays several gifs associated with the words. This webapp uses the giphy api
+                                    to dig for gifs.
+                                </p>
+                                Technologies: Javascript, API, HTML, CSS
+                            </div>
+                           <a class='btn srccode' href='https://github.com/am2woods/gif-search'>Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class='contact' id='contact-id'>
+            <h1>Do you want to work together?</h1>
+            <div class='frame-text'>
+                <h2>Got an idea? Wanna hire me for a project? Don't be a stranger! I'll love to hear from you</h2>
+            </div>
+            <h2 id='openModal' class='btn'>Lets get in touch</h2>
+        </section>
+
+        <footer>
+            <span class="up-arrow">
+                <i id='top'class="fas fa-angle-double-up"></i>
+            </span>
+            <div class="social">
+                <ul class="social-icon">
+                    <li><a href='https://www.linkedin.com/in/ahmad-woods-90720a9b'><i class="fab fa-linkedin-in"></a></i></li>
+                    <li><a href="https://github.com/am2woods/"><i class="fab fa-github-alt"></a></i></li>
+                    <li><a href='https://twitter.com/Aki_Woods'><i class="fab fa-twitter"></i></a></li>
+                    <li><a href='mailto:am2woods@gmail.com'><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </br>
+            <h4>Ahmad Woods &copy; 2020</h4>
+        </footer>
+    </main>
+
+    <aside id='myModal'class='modal'>
+        <div class="modal-content">
+            <span id='closeBtn' class="close">&times;</span>
+            </br>
+                <form action="https://formsubmit.co/am2woods@gmail.com" method="POST" class="form-grid">
+                    <label class='label-name' for="name"><h3>Name:</h3> </label>
+                    <input type="text" name="name" id="name-input" required>
+                    <label email='label-email' for="email"><h3>Email:</h3> </label>
+                    <input type="email" name="email" id="email-input" required>
+                    <label class='label-message' for="message"><h3>Message</h3></label><br>
+                    <textarea name="message" id="message-input" cols="80" rows="8" required></textarea>
+                    <input type="submit" value="Send!" id='send-input'>
+                </form>
+        </div>
+    </aside>
+
+<script src="./js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 400,
+        duration: 1000
+    });
+  </script>
 </body>
 </html>

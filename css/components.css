@@ -1,0 +1,218 @@
+/* Nav Bar */
+    nav{
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 18px;}
+        nav h1{
+            color: #2600ff;
+            display: inline-block;
+            margin: 0 auto 0 0;
+            padding: 0;}
+        .nav-list{
+            font-family: 'Nunito Sans', sans-serif;
+            text-align: center;
+            list-style: none;
+            margin: 0;
+            display: flex;}
+            .nav-list li{
+                display: inline;
+                padding-right: 20px;}
+            .nav-list li:first-child{
+                padding-top: 18px;}
+            .nav-list li:first-child:hover{
+                color: #2600ff;
+                cursor: pointer;
+            }
+
+/* buttons */
+    .btn {
+        display: inline-block;
+        padding: .8em;
+        text-decoration: none;
+        border: 2px solid #2600ff;
+        color: #2600ff; 
+        border-radius: 1.2rem;
+        height: 1em;
+        transition: background ease-in-out .2s;
+        cursor: pointer;}
+            .btn:hover {
+                background: #2600ff; 
+                color: #fff;}
+
+/* icons  */
+    /* top of page arrow in footer */
+    .up-arrow{
+        font-size: 24px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        padding: .5em;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        margin: .5em 0 auto 0;
+        transition: background ease-in-out .2s;
+
+    }
+        .up-arrow:hover{
+            background: #fff;
+            color: #2600ff;
+            cursor: pointer;}
+            
+    /* Social media icons in footer */
+    .social{
+        display: flex;
+    }
+        .social-icon{
+            font-size: 2.5em;
+            text-align: center;
+            list-style: none;
+            margin: 0;
+            display: flex;
+        }
+            .social-icon li{
+                text-align: center;
+                border: 3px solid #fff;
+                border-radius: 50%;
+                padding: .1em;
+                width: 1.2em;
+                height: 1.2em;
+                margin-right: 40px;
+                transition: background ease-in-out .2s;
+            }
+                .social-icon li:hover{
+                    background: #fff;
+                    color: #2600ff;
+                    cursor: pointer;
+                }
+
+/* contact modal */
+    .modal{   
+        display: none; 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2000;
+        position: fixed;
+        padding-top: 2rem;
+        overflow: hidden;
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4);
+    }
+        .modal-content {
+            width: 55vw;
+            height: 80vh;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            background-color: #fefefe;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #dbe4ed;
+            border-radius: 1.2rem;
+            padding: 1.1rem;
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+            /* Animation for modal contact */
+                @-webkit-keyframes animatetop {
+                    from {top:-300px; opacity:0} 
+                    to {top:0; opacity:1}
+                }
+                
+                @keyframes animatetop {
+                    from {top:-300px; opacity:0}
+                    to {top:0; opacity:1}
+                }
+            /* span element that closes the modal contact form */
+            .close{
+                font-size: 2.5em;
+                color: #ccc;
+                transition: transform .6s;
+                align-self: flex-end;
+                position: absolute;
+            }
+                .close:hover{
+                    color: #2600ff;
+                    cursor: pointer;
+                    transform: rotate(360deg);
+                }
+            /* contact form */
+            .form-grid{
+                display: grid;
+                grid-template-areas: 
+                    'nameLabel emailLabel'
+                    'nameInput emailInput'
+                    'messageLabel messageLabel'
+                    'messageInput messageInput'
+                    'submitButton submitButton';
+                grid-gap: .8rem 1rem;
+            }
+                .label-name{
+                    grid-area: nameLabel;
+                }
+                .label-email{
+                    grid-area: emailLabel;
+                }
+                #name-input{
+                    grid-area: nameInput;
+                }
+                #email-input{
+                    grid-area: emailInput;
+                }
+                .label-message{
+                    grid-area: messageLabel;
+                }
+                #message-input{
+                    grid-area: messageInput;
+                }
+                #send-input{
+                    grid-area: submitButton;
+                    width: 50%;
+                    margin: .5rem auto;
+                }
+
+            input[type=text], input[type=email], #message-input{
+                padding: .8rem 1.8rem;
+                box-sizing: border-box;
+                border: 3px solid #dbe4ed;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            }
+                input[type=text]:focus, input[type=email]:focus, #message-input:focus{
+                    border: 3px solid #2600ff;
+                }
+            input[type=submit]{
+                background-color: #fff;
+                padding: .8em;
+                text-decoration: none;
+                border: 2px solid #2600ff;
+                color: #2600ff; 
+                border-radius: 1.2rem;
+                height: 3em;
+                transition: background ease-in-out .2s;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+                input[type=submit]:hover{
+                    background: #2600ff; 
+                    color: #fff;
+                }
+
+/* Projects Modal */
+#giphyapp, #rpsapp, #ombdapp{
+    display: none;
+}
+
+.app-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .app-desc{
+    margin-bottom: auto;
+} */

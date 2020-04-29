@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;}
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000049;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #2600ff;
+}
+
+h2, h3, h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
